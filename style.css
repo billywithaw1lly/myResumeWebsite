@@ -1,0 +1,256 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+header .btn {
+    background-color: #fff;
+    color: #000;
+    padding: 12px 35px;
+    text-decoration: none;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header .btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Resume Section */
+#resume {
+    padding: 80px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#resume h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+#resume .btn {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+#resume .btn:hover {
+    background-color: #444;
+}
+
+.resume-summary {
+    margin-top: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.resume-summary h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.resume-summary p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.resume-summary ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.resume-summary li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+/* Add this for centering the summary section */
+.resume-summary .summary-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.resume-summary .summary-container p, .resume-summary .summary-container ul {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Projects Section */
+#projects {
+    padding: 80px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column; /* Change layout to vertical */
+    gap: 30px; /* Add space between projects */
+    align-items: center; /* Center-align the content */
+    margin-top: 20px;
+}
+
+.project-card {
+    background-color: #f4f4f4;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px; /* Ensure a consistent width for all projects */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.project-card p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.project-card .btn {
+    background-color: #000;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.project-card .btn:hover {
+    background-color: #444;
+}
+
+/* Contact Section */
+#contact {
+    padding: 80px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin: 15px 0 5px;
+    font-weight: 700;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #444;
+    outline: none;
+}
+
+.contact-form button {
+    background-color: white;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #444;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Additional spacing */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}

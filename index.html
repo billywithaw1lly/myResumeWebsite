@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <h1>Welcome to My Resume Website</h1>
+            <p>I'm a passionate software developer.</p>
+            <a href="#resume" class="btn">View Resume</a>
+        </div>
+    </header>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>My Resume</h2>
+        <p>Download my resume to learn more about my skills and experience.</p>
+        <a href="my_resume.pdf" class="btn" download>Download Resume</a>
+        <div class="resume-summary">
+            <p><strong>Summary:</strong> Skilled in software development and problem-solving.</p>
+            <ul>
+                <li>Proficient in JavaScript, Python, and C++</li>
+                <li>Experienced in full-stack web development</li>
+                <li>Strong knowledge of algorithms and data structures</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+        <div class="project-card">
+            <h3>Project 1: Portfolio Website</h3>
+            <p>A personal portfolio website showcasing my work and skills, built with HTML, CSS, and JavaScript.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Project 2: Task Manager App</h3>
+            <p>A task management app with CRUD functionality, developed using React and Node.js.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Project 3: AI Chatbot</h3>
+            <p>An AI-powered chatbot for customer support, built using Python and NLP techniques.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form" class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Name. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init('iYKiBHVCViRs6Dj75');
+        })();
+
+        const form = document.getElementById('contact-form');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            emailjs.sendForm('service_bg0a1yw', 'template_0vahxrx', this)
+                .then(function(response) {
+                    alert('Message sent successfully!');
+                }, function(error) {
+                    alert('There was an error sending the message: ' + error);
+                });
+        });
+    </script>
+</body>
+</html>
