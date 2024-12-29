@@ -92,9 +92,37 @@
                     alert('There was an error sending the message: ' + error);
                 });
         });
+    
+            // When the page is loaded, show the modal
         window.onload = function() {
-        alert("this website is empty as of now it will be built with time cause remember folks rome wasn't built in a day!");  // Customize your message
-    };
+            var modal = document.getElementById("myModal");
+            var span = document.getElementsByClassName("close")[0];
+
+            // Show the modal
+            modal.style.display = "block";
+
+            // Close the modal when the user clicks the "X"
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            // Close the modal if the user clicks anywhere outside of it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        };
+
     </script>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>This website is empty as of now!</h2>
+            <p>It will be built with time cause remember folks rome wasn't built in a day!</p>
+        </div>
+    </div>
+
 </body>
 </html>
