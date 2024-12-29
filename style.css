@@ -233,19 +233,19 @@ header .btn:hover {
 }
 
 .contact-form button {
-    background-color: white;
-    color: #fff;
+    background-color: black;
+    color:white;
     padding: 12px 25px;
     border: none;
     border-radius: 5px;
     font-size: 1.2rem;
     font-weight: 700;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: opacity 0.3s ease;
 }
 
 .contact-form button:hover {
-    background-color: #444;
+    opacity: 0.5;
 }
 
 /* Footer */
